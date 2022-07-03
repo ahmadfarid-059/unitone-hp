@@ -115,6 +115,7 @@ export default function AddPackageForm({ handleClose }) {
               startAdornment: (
                 <Mui.InputAdornment position="start">kg</Mui.InputAdornment>
               ),
+                min: 0,
             }}
             type="number"
             sx={styles.select}
@@ -136,7 +137,6 @@ export default function AddPackageForm({ handleClose }) {
                 <Mui.InputAdornment position="start">$</Mui.InputAdornment>
               ),
               min: 0,
-              max: 2,
             }}
             sx={styles.select}
             type="number"
